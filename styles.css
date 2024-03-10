@@ -8,15 +8,7 @@ html,body,h1,h2,h3,h4,h5,h6
     background-color: #0774d3; /* cor de fundo azul */
   }
 
-.project {
-    margin-bottom: 20px;
-  }
-  
-  .project img {
-    max-width: 100%;
-    height: auto;
-  }
-  /* styles.css */
+/* styles.css */
 
 /* Adiciona mais espaçamento entre os elementos */
 .w3-container {
