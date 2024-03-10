@@ -92,3 +92,14 @@ footer a {
 footer a:hover {
   text-decoration: none; /* Remove sublinhado ao passar o mouse */
 }
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.project img {
+  max-width: 100%;
+  height: auto;
+}
