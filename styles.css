@@ -8,7 +8,6 @@ html,body,h1,h2,h3,h4,h5,h6
     background-color: #0774d3; /* cor de fundo azul */
   }
 
-/* styles.css */
 
 /* Adiciona mais espaçamento entre os elementos */
 .w3-container {
@@ -92,6 +91,6 @@ footer a:hover {
   text-align: center;
 }
 .project img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
