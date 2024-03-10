@@ -57,3 +57,38 @@ html,body,h1,h2,h3,h4,h5,h6
   footer a:hover {
     text-decoration: none; /* Remove sublinhado ao passar o mouse */
   }
+
+  /* Adiciona cores de destaque */
+.w3-indigo {
+  background-color: #4b0082; /* Ícones e destaque de texto em índigo */
+  color: #fff; /* Texto em branco */
+}
+
+/* Adiciona bordas arredondadas aos contêineres */
+.w3-card {
+  border-radius: 8px;
+}
+
+/* Estiliza as tags de habilidades */
+.w3-light-grey {
+  background-color: #f5f5f5; /* Fundo cinza claro */
+}
+
+.w3-light-grey .w3-container {
+  padding: 8px; /* Espaçamento interno */
+}
+
+/* Estiliza o rodapé */
+footer {
+  padding: 20px;
+  background-color: #333; /* Fundo escuro */
+  color: #fff; /* Texto em branco */
+}
+
+footer a {
+  color: #fff; /* Links em branco */
+}
+
+footer a:hover {
+  text-decoration: none; /* Remove sublinhado ao passar o mouse */
+}
