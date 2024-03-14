@@ -60,3 +60,16 @@ footer a:hover {
   max-width: 50%;
   height: auto;
 }
+
+.ssp-whats-atendimento__icon {
+  font-size: 39px;
+  color: white;
+}
+
+.fa-brands, .fab {
+  font-weight: 400;
+}
+
+.fa-brands, .fab {
+  font-family: "Font Awesome 6 Brands";
+}
