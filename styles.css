@@ -61,15 +61,17 @@ footer a:hover {
   height: auto;
 }
 
-.ssp-whats-atendimento__icon {
+.fixed-icon {
+  position: fixed;
+  bottom: 20px; /* Você pode ajustar a distância do ícone em relação à parte inferior da página conforme necessário */
+  right: 20px; /* Você pode ajustar a distância do ícone em relação à parte direita da página conforme necessário */
+  z-index: 999; /* Certifique-se de que o ícone esteja acima de outros elementos, se necessário */
+}
+
+.fixed-icon .ssp-whats-atendimento__icon {
   font-size: 39px;
   color: white;
-}
-
-.fa-brands, .fab {
   font-weight: 400;
-}
-
-.fa-brands, .fab {
   font-family: "Font Awesome 6 Brands";
 }
+
