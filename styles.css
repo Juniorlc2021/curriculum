@@ -1,10 +1,22 @@
-html,body,h1,h2,h3,h4,h5,h6 {
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Roboto", sans-serif;
 }
 
 body {
   color: #888;
   background-color: #0774d3;
+  display: flex;
+  flex-direction: row; /* Altera o fluxo para ser em linha */
+  justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+  align-items: center; /* Alinha o conteúdo ao centro verticalmente */
+  height: 100vh; /* Faz o corpo preencher toda a altura da tela */
 }
 
 /* Adiciona mais espaçamento entre os elementos */
@@ -54,10 +66,10 @@ footer a:hover {
   align-items: center;
   text-align: center;
   margin-top: 20px;
+  margin-left: auto; /* Move a seção para o lado direito */
 }
 
 .project img {
   max-width: 50%;
   height: auto;
 }
-
