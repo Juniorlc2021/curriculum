@@ -8,7 +8,7 @@ body {
 }
 
 .w3-twothird {
-  background-color: rgb(192, 189, 216); /* Adicione a cor de fundo desejada */
+  background-color: ; /* Adicione a cor de fundo desejada */
   float: right;
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 .w3-light-grey .w3-container {
-  padding: 8px;
+  padding: 10px;
 }
 
 /* Estiliza o rodapé */
