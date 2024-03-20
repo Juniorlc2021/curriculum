@@ -65,8 +65,3 @@ footer a:hover {
   max-width: 50%;
   height: auto;
 }
-
-.conteudo-direita {
-  margin: 0 auto; /* Isso alinhará o contêiner no centro horizontal */
-  max-width: 800px; /* Ajuste a largura máxima conforme necessário */
-}
