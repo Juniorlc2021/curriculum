@@ -187,7 +187,7 @@
                 }
                 // Obter o valor do dólar em tempo real
               window.onload = function() {
-                var url = 'https://www.google.com/recaptcha/api2/aframe';
+                var url = 'https://api.bcb.gov.br/dados/serie/bcdata.sgs.10813/dados?formato=json';
                 fetch(url)
                   .then(response => response.text())
                   .then(data => {
