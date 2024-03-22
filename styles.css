@@ -67,10 +67,10 @@ footer a:hover {
 }
 
 .titulo-utilidades {
-  font-size: 24px; /* Tamanho da fonte */
-  color: #07d3a7; /* Cor do texto */
+  font-size: 28px; /* Tamanho da fonte */
+  color: #0f0f0f6b; /* Cor do texto */
   text-align: center; /* Alinhamento central */
-  text-transform: lowercase; /* Transforma o texto em  */
+   /* Transforma o texto em  */
   margin-bottom: 20px; /* Margem inferior para espaçamento */
   letter-spacing: 2px; /* Espaçamento entre letras */
   font-weight: bold; /* Negrito */
