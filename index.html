@@ -144,7 +144,7 @@
               </div>
               <br>
 
-              <h2>Utilidaes</h2>
+              <h2 class="titulo-utilidades">Utilidades</h2>
   
               <title>Conversor Decimal-Binário</title>
               <label for="numero">Digite um número decimal:</label>
@@ -153,7 +153,17 @@
                 <button onclick="binarioParaDecimal()">Converter para Decimal</button>
     
                   <p id="resultado"></p>
+
+                  <div class="secao-calcular">
+                    <h2>Calcular Dólar</h2>
+                    <label for="valor-reais">Valor em Reais:</label>
+                    <input type="number" id="valor-reais">
+                    <button onclick="calcularDolar()">Calcular</button>
+                    <p id="resultado-dolar"></p>
+                  </div>
+                  
                  <script>
+
                 function decimalParaBinario() {
                  var numeroDecimal = parseInt(document.getElementById("numero").value);
                  var binario = numeroDecimal.toString(2);
@@ -165,6 +175,14 @@
                  var decimal = parseInt(binario, 2);
                 document.getElementById("resultado").innerText = "Decimal: " + decimal;
                  }
+                 
+                 function calcularDolar() {
+                  var valorReais = parseFloat(document.getElementById("valor-reais").value);
+                  var taxaDolar = 5.5; // Suponha uma taxa de câmbio fixa
+                  var resultadoDolar = valorReais / taxaDolar;
+                  document.getElementById("resultado-dolar").innerText = "Valor em Dólar: $" + resultadoDolar.toFixed(2);
+                }
+                
               </script>
               <br>
             </div>

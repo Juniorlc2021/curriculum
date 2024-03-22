@@ -65,3 +65,47 @@ footer a:hover {
   max-width: 50%;
   height: auto;
 }
+
+.titulo-utilidades {
+  font-size: 24px; /* Tamanho da fonte */
+  color: #07d3a7; /* Cor do texto */
+  text-align: center; /* Alinhamento central */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  margin-bottom: 20px; /* Margem inferior para espaçamento */
+  letter-spacing: 2px; /* Espaçamento entre letras */
+  font-weight: bold; /* Negrito */
+}
+
+.secao-calcular {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.secao-calcular h2 {
+  color: #333;
+}
+
+.secao-calcular label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.secao-calcular input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.secao-calcular button {
+  background-color: #0774d3;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.secao-calcular button:hover {
+  background-color: #4b0082;
+}
