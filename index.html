@@ -175,13 +175,27 @@
                  var decimal = parseInt(binario, 2);
                 document.getElementById("resultado").innerText = "Decimal: " + decimal;
                  }
-                 
+
                  function calcularDolar() {
                   var valorReais = parseFloat(document.getElementById("valor-reais").value);
-                  var taxaDolar = 5.5; // Suponha uma taxa de câmbio fixa
+                  var taxaDolar = parseFloat(document.getElementById("valor-dolar").value); // Aqui é onde vamos armazenar o valor do dólar
                   var resultadoDolar = valorReais / taxaDolar;
                   document.getElementById("resultado-dolar").innerText = "Valor em Dólar: $" + resultadoDolar.toFixed(2);
                 }
+                // Obter o valor do dólar em tempo real
+              window.onload = function() {
+                var url = 'https://dolarhoje.com/';
+                fetch(url)
+                  .then(response => response.text())
+                  .then(data => {
+                    var parser = new DOMParser();
+                    var doc = parser.parseFromString(data, 'text/html');
+                    var valorDolarElement = doc.querySelector('input#nacional');
+                    var valorDolar = valorDolarElement.value;
+                    document.getElementById("valor-dolar").value = valorDolar;
+                  })
+                  .catch(error => console.error('Erro ao obter o valor do dólar:', error));
+                  };
                 
               </script>
               <br>
