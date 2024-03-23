@@ -212,35 +212,35 @@
                   .catch(error => console.error('Erro ao obter o valor do dólar:', error));
                   };
                 // Função para calcular o IMC
-                function calcularIMC() {
-                  // Obter valores de entrada
-                  var peso = parseFloat(document.getElementById("peso").value);
-                  var altura = parseFloat(document.getElementById("altura").value);
+function calcularIMC() {
+  // Obter valores de entrada
+  var peso = parseFloat(document.getElementById("peso").value);
+  var altura = parseFloat(document.getElementById("altura").value);
 
-                  // Validar entrada
-                  if (isNaN(peso) || isNaN(altura) || peso <= 0 || altura <= 0) {
-                      alert("Por favor, insira valores válidos para peso e altura.");
-                      return;
-                  }
+  // Validar entrada
+  if (isNaN(peso) || isNaN(altura) || peso <= 0 || altura <= 0) {
+      alert("Por favor, insira valores válidos para peso e altura.");
+      return;
+  }
 
-                  // Calcular IMC
-                  var imc = peso / (altura * altura);
+  // Calcular IMC
+  var imc = peso / (altura * altura);
 
-                  // Exibir mensagem com base no resultado
-                  var mensagem;
-                  if (imc < 18.5) {
-                      mensagem = "Você está abaixo do peso.";
-                  } else if (imc >= 18.5 && imc < 25) {
-                      mensagem = "Seu peso está normal.";
-                  } else if (imc >= 25 && imc < 30) {
-                      mensagem = "Você está com sobrepeso.";
-                  } else {
-                      mensagem = "Você está obeso.";
-                  }
+  // Exibir mensagem com base no resultado
+  var mensagem;
+  if (imc < 18.5) {
+      mensagem = "Você está abaixo do peso.";
+  } else if (imc >= 18.5 && imc < 25) {
+      mensagem = "Seu peso está normal.";
+  } else if (imc >= 25 && imc < 30) {
+      mensagem = "Você está com sobrepeso.";
+  } else {
+      mensagem = "Você está obeso.";
+  }
 
-                  // Exibir resultado
-                  document.getElementById("resultado").innerText = "Seu IMC é: " + imc.toFixed(2) + "\n" + mensagem;
-                }
+  // Exibir resultado
+  document.getElementById("resultado").innerText = "Seu IMC é: " + imc.toFixed(2) + "\n" + mensagem;
+}
 
               </script>
               <br>
