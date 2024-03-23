@@ -209,7 +209,7 @@
                       alert("Por favor, insira valores válidos para peso e altura.");
                       return;
                   
-
+                  }
                   // Calcular IMC
                   var imc = peso / (altura * altura);
 
@@ -224,10 +224,10 @@
                   } else {
                       mensagem = "Você está obeso.";
                   }
-                }
-  // Exibir resultado
-  document.getElementById("resultado").innerText = "Seu IMC é: " + imc.toFixed(2) + "\n" + mensagem;
-}
+                
+                    // Exibir resultado
+                    document.getElementById("resultado-imc").innerText = "Seu IMC é: " + imc.toFixed(2) + "\n" + mensagem;
+                  }
 
               </script>
               <br>
