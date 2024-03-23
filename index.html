@@ -175,7 +175,7 @@
                   
                   <button onclick="calcularIMC()">Calcular IMC</button><br>
                   
-                  <p id="resultado"></p>
+                  <p id="resultado-imc"></p>
                   
                  <script>
 
@@ -193,24 +193,11 @@
 
                  function calcularDolar() {
                   var valorReais = parseFloat(document.getElementById("valor-reais").value);
-                  var taxaDolar = parseFloat(document.getElementById("valor-dolar").value); // Aqui é onde vamos armazenar o valor do dólar
+                  var taxaDolar = 5.0; // Suponha uma taxa de câmbio fixa
                   var resultadoDolar = valorReais / taxaDolar;
                   document.getElementById("resultado-dolar").innerText = "Valor em Dólar: $" + resultadoDolar.toFixed(2);
                 }
-                // Obter o valor do dólar em tempo real
-              window.onload = function() {
-                var url = 'https://api.bcb.gov.br/dados/serie/bcdata.sgs.10813/dados?formato=json';
-                fetch(url)
-                  .then(response => response.text())
-                  .then(data => {
-                    var parser = new DOMParser();
-                    var doc = parser.parseFromString(data, 'text/html');
-                    var valorDolarElement = doc.querySelector('input#nacional');
-                    var valorDolar = valorDolarElement.value;
-                    document.getElementById("valor-dolar").value = valorDolar;
-                  })
-                  .catch(error => console.error('Erro ao obter o valor do dólar:', error));
-                  };
+                
                 // Função para calcular o IMC
 function calcularIMC() {
   // Obter valores de entrada
