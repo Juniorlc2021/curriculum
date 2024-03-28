@@ -126,3 +126,23 @@ footer a:hover {
   background-color: #4b0082;
 }
 
+/* Estilo para o título dos links */
+.titulo-links {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo para os links */
+.links a {
+  display: block;
+  color: #0774d3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #4b0082;
+}
+
